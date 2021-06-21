@@ -148,7 +148,7 @@ export default {
             alert('에러 발생: ' + err); //에러 발생
           });          
         }
-        else if(this.dialogTitle=="수정"){
+        /*else if(this.dialogTitle=="수정"){
           //alert("입력된 정보 : " + "이메일 : " + this.contactInfo.email + " 패스워드 : " + this.contactInfo.password);
           axios.put(this.urlinfo + '/'+ this.deviceInfo.deviceId, { 
             deviceId: this.deviceInfo.deviceId, name: this.deviceInfo.name, phone:  this.deviceInfo.phone,
@@ -170,7 +170,7 @@ export default {
             alert('에러 발생: ' + err); //에러 발생
           }); 
 
-        }
+        }*/
         else {
           axios.delete(this.urlinfo + '/'+ this.deviceInfo.deviceId, { data: { deviceId: this.deviceInfo.deviceId } })
           .then((result) => { 
