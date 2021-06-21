@@ -104,7 +104,7 @@ export default {
       this.dialogTitle = "추가";
       this.deviceInfo.register_date = Date.now();
     },
-    updateDevice(data){
+    /*updateDevice(data){
       this.dialog = true;
       this.dialogTitle = "수정";
       this.deviceInfo.deviceId = data.deviceId;
@@ -112,7 +112,7 @@ export default {
       this.deviceInfo.adress = data.adress;
       this.deviceInfo.description = data.description;
       this.deviceInfo.register_date = data.register_date;
-    },
+    },*/
     deleteDevice(data){
       this.dialog = true;
       this.dialogTitle = "삭제";
