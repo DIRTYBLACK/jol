@@ -1,6 +1,6 @@
 const Data = require('./jdata.model.js');
 
-// 새로운 연락처 만들기
+//새로운 데이터 생성
 exports.create = (req, res) => {
   const contact = new Data({ 
     deviceId: req.body.deviceId,
@@ -10,7 +10,7 @@ exports.create = (req, res) => {
     description: req.body.description
   });
   
-  //데이터베이스에 새로운 연락처 저장하기 
+  //저장 에러처리
   contact.save()
   .then(data => { res.send(data); })
   .catch(err => { 
@@ -31,7 +31,7 @@ exports.findAll = (req, res) => {
   });
 };
 
-//특정한 연락처 검색
+//특정한 기기 검색
 exports.findOne = (req, res) => {
   Data.find({deviceId : req.params.deviceId})
   .then( contact => {
