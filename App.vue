@@ -10,9 +10,9 @@
             <v-col>
                 <data-table/>
             </v-col>
-            <v-col>
+            /*<v-col>
                 <data-chart/>
-            </v-col>
+            </v-col>*/
         </v-row>
     </v-container>
 </v-app>
@@ -21,7 +21,7 @@
 <script>
 import DeviceTable from './components/DeviceTable';
 import DataTable from './components/DataTable';
-import DataChart from './components/DataChart';
+//import DataChart from './components/DataChart';
 
 export default {
   name: 'App',
